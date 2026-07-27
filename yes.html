@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Order Successful</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      height: 100vh;
+      background: linear-gradient(to bottom right, #ffe7f0, #fff0f5);
+      overflow: hidden;
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    h1 {
+      font-size: 3em;
+      color: #d63384;
+      z-index: 10;
+      text-shadow: 2px 2px #ffffff;
+    }
+
+    .message {
+      font-size: 1.5em;
+      color: #6c3483;
+      margin-top: 10px;
+      z-index: 10;
+    }
+
+    .flower {
+      position: absolute;
+      top: -50px;
+      font-size: 24px;
+      animation: fall linear infinite;
+    }
+
+    @keyframes fall {
+      0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(110vh) rotate(360deg);
+        opacity: 0;
+      }
+    }
+    body{
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9f9;
+      text-align: center;
+      padding-top: 100px;
+    }
+
+    .link-button {
+      display: inline-block;
+      padding: 10px 25px;
+      background-color: #7a4a2e;
+      color: white;
+      text-decoration: none;
+      font-size: 15px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: background-color 0.3s, transform 0.2s;
+      
+    }
+
+    .link-button:hover {
+      background-color: #db931f;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🎉 Your Order is Successful!</h1>
+  <div class="message">Thank you for shopping with us 💖</div><br>
+  <a href="ec.html" class="link-button">BACK</a><br><br>
+
+  <script>
+    // Generate flower emojis randomly falling
+    const emojis = ['🌸', '💮', '🌺', '🌷', '🌼'];
+    
+    function createFlower() {
+      const flower = document.createElement('div');
+      flower.classList.add('flower');
+      flower.innerText = emojis[Math.floor(Math.random() * emojis.length)];
+      flower.style.left = Math.random() * 100 + 'vw';
+      flower.style.animationDuration = (3 + Math.random() * 5) + 's';
+      flower.style.fontSize = (20 + Math.random() * 20) + 'px';
+      document.body.appendChild(flower);
+
+      setTimeout(() => {
+        flower.remove();
+      }, 8000);
+    }
+
+    setInterval(createFlower, 200);
+  </script>
+
+</body>
+</html>

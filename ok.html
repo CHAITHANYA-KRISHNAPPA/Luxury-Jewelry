@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Thank You</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9f9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .box {
+      background-color: #fff;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      text-align: center;
+      width: 90%;
+      max-width: 500px;
+    }
+
+    h1 {
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    p {
+      color: #666;
+      font-size: 1em;
+      margin-bottom: 30px;
+    }
+
+    button {
+      background-color: #4a76a8;
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 6px;
+      font-size: 1em;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #3a5f85;
+    }
+
+    .message {
+      display: none;
+      margin-top: 20px;
+      color: #444;
+      font-weight: 500;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="box">
+    <h1>Thank You for Visiting</h1>
+    <p>You can continue exploring our collection.</p>
+    <button onclick="window.open('http://127.0.0.1:5500/CHAITHANYA-WEBDEVELOPMENT/eg.html', '_blank')"">Explore More Designs</button>
+    <div class="message" id="message">You can explore our other designs in the collection section.</div>
+  </div>
+
+  <script>
+    function showMessage() {
+      document.getElementById("message").style.display = "block";
+    }
+  </script>
+
+</body>
+</html>

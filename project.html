@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 100px;
+    }
+    input {
+      padding: 8px;
+      margin: 10px;
+      width: 200px;
+    }
+    button {
+      padding: 10px 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Login Page</h2>
+  <form onsubmit="return checkLogin()">
+    <input type="text" id="username" placeholder="Enter Username" required><br>
+    <input type="password" id="password" placeholder="Enter Password" required><br>
+    <button type="submit">Login</button>
+  </form>
+
+  <p id="message" style="color: red;"></p>
+
+  <script>
+    function checkLogin() {
+      const correctUsername = "admin";
+      const correctPassword = "12345";
+
+      const enteredUsername = document.getElementById("username").value;
+      const enteredPassword = document.getElementById("password").value;
+
+      if (enteredUsername === correctUsername && enteredPassword === correctPassword) {
+        document.getElementById("message").style.color = "green";
+        document.getElementById("message").textContent = "Login successful!";
+      } else {
+        document.getElementById("message").style.color = "red";
+        document.getElementById("message").textContent = "Incorrect username or password.";
+        
+      }
+
+      // Prevent form submission (no page reload)
+      return false;
+    }
+    
+  </script>
+
+</body>
+</html>

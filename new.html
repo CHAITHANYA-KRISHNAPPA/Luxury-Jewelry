@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electronic Explorer</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .header {
+            background-color: #3f51b5;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .header a.trial-button {
+            background-color: #ff9800;
+            padding: 8px 15px;
+            border-radius: 5px;
+        }
+
+        .hero {
+            background-image: url('c:\Users\chait\Downloads\inductor.jpeg'); /* Replace with your image */
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 10px 20px;
+        }
+
+        .hero h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+
+        .hero button {
+            background-color: #ff9800;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1em;
+            cursor: pointer;
+        }
+
+        .components {
+            display: flex;
+            justify-content: space-around;
+            padding: 50px 20px;
+            background-color: #fff;
+        }
+
+        .component {
+            text-align: center;
+        }
+
+        .component img {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 10px;
+        }
+
+        .component h3 {
+            margin-bottom: 5px;
+        }
+
+        .bundles {
+            display: flex;
+            justify-content: space-around;
+            padding: 50px 20px;
+            background-color: #f4f4f4;
+        }
+
+        .bundle {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            width: 40%;
+            text-align: center;
+        }
+
+        .bundle img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        .bundle p {
+            margin-bottom: 20px;
+        }
+
+        .bundle a {
+            background-color: #3f51b5;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .components, .bundles {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .bundle {
+                width: 90%;
+                margin-bottom: 20px;
+            }
+        }
+
+    </style>
+</head>
+<body >
+    <div class="header">
+        <div>
+           WELCOME TO EXPLORER ELECTRONICS!!
+        </div>
+        <div>
+            <a href="#">ABOUT</a>
+            <a href="#">SERVICES</a>
+            <a href="#">CONTACTS</a>
+            <a href="#">FEEDBACK</a>
+            <a href="#">HELP</a>
+            <!--<a href="#">Q | A</a>-->
+            <!--<a href="#" class="trial-button">GET A FREE TRIAL</a>-->
+        </div>
+    </div>
+
+    <div class="hero">
+        <h1>ELECTRONICS MADE EASY</h1>
+        <p>Electronics information which is made easy by exploring Explorer.</p>
+        <button>LOGIN</button>
+        <img src="d:\Explorer\EXPLORER LOGO.png">
+    </div>
+    
+
+    <div class="components">
+        <div class="component">
+            <img src="c:\Users\chait\Downloads\diode.jpeg" alt="Web Components">
+            <h3>Resistor</h3>
+        </div>
+        <div class="component">
+            <img src="c:\Users\chait\Downloads\capacitor.jpeg" alt="Desktop Components">
+            <h3>Capacitor</h3>
+        </div>
+        <div class="component">
+            <img src="c:\Users\chait\Downloads\inductor.jpeg" alt="Mobile Components">
+            <h3>Inductor</h3>
+        </div>
+        <div class="component">
+            <img src="c:\Users\chait\Downloads\diodeim.jpeg" alt="Reporting & Dashboards">
+            <h3>Diode</h3>
+        </div>
+        <div class="component">
+            <img src="c:\Users\chait\Downloads\transistor.jpeg" alt="Testing & Debugging">
+            <h3>Transistor</h3>
+        </div>
+        <div class="component">
+            <img src="ui-ux-tools.png" alt="UI/UX Tools">
+            <h3>UI/UX Tools</h3>
+        </div>
+    </div>
+
+    <div class="bundles">
+        <div class="bundle">
+            <img src="D:\Explorer" alt="Telerik DevCraft">
+            <h3>Telerik DevCraft</h3>
+            <p></p>
+            <a href="#">More About DevCraft</a>
+        </div>
+        <div class="bundle">
+            <img src="kendo-ui.png" alt="Kendo UI">
+            <h3>Kendo UI</h3>
+            <p>UI components for JavaScript frameworks including jQuery, Angular, React, and Vue.</p>
+            <a href="#">More About Kendo UI</a>
+        </div>
+    </div>
+</body>
+</html>

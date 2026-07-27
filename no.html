@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Order Status</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f5f5f5;
+      text-align: center;
+      padding-top: 100px;
+      color: #333;
+    }
+
+    .container {
+      background-color: #ffffff;
+      margin: auto;
+      padding: 40px;
+      width: 60%;
+      max-width: 500px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 8px;
+    }
+
+    h1 {
+      font-size: 2em;
+      margin-bottom: 15px;
+    }
+
+    p {
+      font-size: 1em;
+      margin-bottom: 30px;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 1em;
+      background-color: #4a76a8;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #3a5f85;
+    }
+
+    .notice {
+      margin-top: 30px;
+      font-size: 1em;
+      color: #444;
+      display: none;
+    }
+    body{
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9f9;
+      text-align: center;
+      padding-top: 100px;
+    }
+
+    .link-button {
+      display: inline-block;
+      padding: 10px 25px;
+      background-color: #7a4a2e;
+      color: white;
+      text-decoration: none;
+      font-size: 15px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: background-color 0.3s, transform 0.2s;
+      
+    }
+
+    .link-button:hover {
+      background-color: #db931f;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Order Cancelled</h1>
+    <p>Your order has been cancelled as per your request.</p>
+    <a href="ec.html" class="link-button">EXPLORE OUR NEW DESIGNS</a><br><br>
+    <div class="notice" id="notice">
+      You may browse our latest designs and offers anytime.
+    </div>
+  </div>
+
+  <script>
+    function showNotice() {
+      document.getElementById('notice').style.display = 'block';
+    }
+  </script>
+
+</body>
+</html>
