@@ -86,7 +86,7 @@ Simply open the `index.html` file in your preferred web browser.
 ## Project 
 <p align="center">
   <b> Images </b><br><br>
-  <img src="image1.jpeg" width="300"/>
+  <img src="image1.png" width="300"/>
    <img src="image2.jpeg" width="300"/>
    <img src="image3.jpeg" width="300"/>
 </p>
