@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Jewelry Services</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #fffaf6;
+      margin: 0;
+      padding: 40px;
+      color: #3b2e2a;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+      color: #7a4a2e;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 250px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .box {
+      background: #ffffff;
+      border-radius: 12px;
+      padding: 50px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .box:hover {
+      transform: translateY(-5px);
+    }
+
+    .box h2 {
+      font-size: 1.5em;
+      color: #5a3729;
+      margin-bottom: 10px;
+    }
+
+    .box p {
+      font-size: 1em;
+      color: #4a3b35;
+    }
+
+    footer {
+      margin-top: 50px;
+      text-align: center;
+      color: #7a5e50;
+    }
+    .card-info {
+      position: absolute;
+      bottom: 0;
+      background: rgba(0,0,0,0.6);
+      color: white;
+      width: 100%;
+      padding: 20px;
+      transform: translateY(100%);
+      transition: transform 0.4s ease;
+    }
+    .card {
+      position: relative;
+      overflow: hidden;
+      border-radius: 18px;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+      transform: translateX(120px);
+      opacity: 0;
+      transition: transform 0.6s ease, opacity 0.6s ease;
+      background: white;
+      height: 300px; /* Increase image size */
+      object-fit: cover;
+    }
+    .gold-btn {
+    background: linear-gradient(to right, #d4af37, #b68c2c);
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1em;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    cursor: pointer;
+    transition: 0.3s ease;
+    }
+    .gold-btn:hover {
+  background: linear-gradient(to right, #b68c2c, #d4af37);
+  transform: scale(1.05);
+    }
+    footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f0f0f0;
+  text-align: center;
+  padding: 15px 0;
+  color: #333;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 1em;
+  box-shadow: 0 -1px 5px rgba(0,0,0,0.1);
+}
+body{
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9f9;
+      text-align: center;
+      padding-top: 100px;
+    }
+
+    .link-button {
+      display: inline-block;
+      padding: 10px 25px;
+      background-color: #7a4a2e;
+      color: white;
+      text-decoration: none;
+      font-size: 15px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: background-color 0.3s, transform 0.2s;
+      
+    }
+
+    .link-button:hover {
+      background-color: #db931f;
+      transform: scale(1.05);
+    }
+
+  </style>
+</head>
+<body>
+
+  <header><h1>Jewelry Options</h1>
+    <h1>LUXURY JEWELRY  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+        <div class="lj-floral">LJ</div>
+    </h1>
+    <style>
+        .lj-floral {
+          font-family: 'Great Vibes', cursive;
+          font-size: 60px;
+          color: #c97c5d;
+          text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+        </style>
+        </header>
+  
+    <br><br><br><br>
+  <div class="grid">
+    <div class="box">
+      <h2>Confirm Your Order</h2>
+      <a href="yes.html" class="link-button">YES</a><br><br>
+      <a href="no.html" class="link-button">NO</a><br><br>
+    </div>
+    <div class="box">
+      <h2>Do you want to explore other collections</h2>
+      <a href="ec.html" class="link-button">YES</a><br><br>
+      <a href="eg.html" class="link-button">NO</a><br><br>
+    </div>
+    
+  <div class="card" data-title="Diamond Necklace" data-img="https://source.unsplash.com/900x600/?necklace,jewelry">
+    <img src="diamond_neck.jpg" alt="Necklace">
+    <div class="card-info">
+      <h3>Diamond Necklace</h3>
+      <p>&#8377 1,00,000- &#8377 2,00,000</p>
+      <button>Buy Now</button>
+    </div>
+  </div>
+  
+ 
+
+  <footer class="footer">
+    © 2025 Jewelry Luxe | Crafted for Elegance
+  </footer>
+
+</body>
+</html>

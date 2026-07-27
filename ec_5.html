@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Jewelry_5</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #fffaf6;
+      color: #3b2e2a;
+      overflow-x: hidden;
+    }
+
+    header {
+      background: linear-gradient(to right, #fbead2, #e0c9a6);
+      padding: 100px 30px;
+      text-align: center;
+      animation: fadeInDown 1s ease-out;
+    }
+
+    header h1 {
+      font-size: 3.5em;
+      color: #7a4a2e;
+    }
+
+    header p {
+      margin-top: 15px;
+      font-size: 1.4em;
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-60px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 40px;
+      padding: 60px 40px;
+      max-width: 1400px;
+      margin: auto;
+    }
+
+    .card {
+      position: relative;
+      overflow: hidden;
+      border-radius: 18px;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+      transform: translateX(120px);
+      opacity: 0;
+      transition: transform 0.6s ease, opacity 0.6s ease;
+      background: white;
+      height: 300px; /* Increase image size */
+      object-fit: cover;
+    }
+
+    .card.visible {
+      transform: translateX(0);
+      opacity: 1;
+    }
+
+    .card img {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+
+    .card:hover img {
+      transform: scale(1.1);
+    }
+
+    .card-info {
+      position: absolute;
+      bottom: 0;
+      background: rgba(0,0,0,0.6);
+      color: white;
+      width: 100%;
+      padding: 20px;
+      transform: translateY(100%);
+      transition: transform 0.4s ease;
+    }
+
+    .card:hover .card-info {
+      transform: translateY(0);
+    }
+
+    .card-info h3 {
+      font-size: 1.5em;
+    }
+
+    .card-info p {
+      margin-top: 5px;
+    }
+
+    .card-info button {
+      margin-top: 10px;
+      padding: 10px 20px;
+      background: #7a4a2e;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      cursor: pointer;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: #f0e3d5;
+      color: #6a4a3e;
+    }
+    body{
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9f9;
+      text-align: center;
+      padding-top: 100px;
+    }
+
+    .link-button {
+      display: inline-block;
+      padding: 10px 25px;
+      background-color: #7a4a2e;
+      color: white;
+      text-decoration: none;
+      font-size: 15px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: background-color 0.3s, transform 0.2s;
+      
+    }
+
+    .link-button:hover {
+      background-color: #db931f;
+      transform: scale(1.05);
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>LUXURY JEWELRY  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+        <div class="lj-floral">LJ</div>
+</h1>
+   <p>Where Elegance Meets Craft</p>
+    <style>
+        .lj-floral {
+          font-family: 'Great Vibes', cursive;
+          font-size: 60px;
+          color: #c97c5d;
+          text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+        </style>
+        </header>
+  
+    <section class="gallery">
+    <div class="card" data-title="Rose Gold Ring" data-img="https://source.unsplash.com/900x600/?ring,jewelry">
+        <img src="mn_1.jpg" alt="Ring">
+        <div class="card-info">
+          <h3>Silver</h3>
+          <p>&#8377 5,000</p>
+          <br>
+          <a href="ee.html" class="link-button">BUY NOW</a><br><br>
+          <a href="eg.html" class="link-button">BACK</a>
+       </div>
+      </div>
+
+
+    <div class="card" data-title="Rose Gold Ring" data-img="https://source.unsplash.com/900x600/?ring,jewelry">
+        <img src="mn_2.jpg" alt="Ring">
+        <div class="card-info">
+          <h3>Unique collections</h3>
+          <p>&#8377 8,000</p>
+          <br>
+          <a href="ee.html" class="link-button">BUY NOW</a><br><br>
+          <a href="eg.html" class="link-button">BACK</a>
+       </div>
+      </div>
+
+      <div class="card" data-title="Rose Gold Ring" data-img="https://source.unsplash.com/900x600/?ring,jewelry">
+        <img src="mn_3.jpg" alt="Ring">
+        <div class="card-info">
+          <h3>Simple</h3>
+          <p>&#8377 6,500</p>
+          <br>
+          <a href="ee.html" class="link-button">BUY NOW</a><br><br>
+          <a href="eg.html" class="link-button">BACK</a>
+       </div>
+      </div>
+
+      <div class="card" data-title="Rose Gold Ring" data-img="https://source.unsplash.com/900x600/?ring,jewelry">
+        <img src="mn_4.jpg" alt="Ring">
+        <div class="card-info">
+          <h3>Gold</h3>
+          <p>&#8377 18,000</p>
+          <br>
+          <a href="ee.html" class="link-button">BUY NOW</a><br><br>
+          <a href="eg.html" class="link-button">BACK</a>
+       </div>
+      </div>
+
+      <div class="card" data-title="Rose Gold Ring" data-img="https://source.unsplash.com/900x600/?ring,jewelry">
+        <img src="mn_5.jpg" alt="Ring">
+        <div class="card-info">
+          <h3>Platinum</h3>
+          <p>&#8377 19,000</p>
+          <br>
+          <a href="ee.html" class="link-button">BUY NOW</a><br><br>
+          <a href="eg.html" class="link-button">BACK</a>
+       </div>
+      </div>
+
+      <div class="card" data-title="Rose Gold Ring" data-img="https://source.unsplash.com/900x600/?ring,jewelry">
+        <img src="mn_6.jpg" alt="Ring">
+        <div class="card-info">
+          <h3>Stones</h3>
+          <p>&#8377 8,000</p>
+          <br>
+          <a href="ee.html" class="link-button">BUY NOW</a><br><br>
+          <a href="eg.html" class="link-button">BACK</a>
+       </div>
+      </div>
+
+
+    
+  </section>
+
+  <footer>
+    © 2025 Jewelry Luxe. All rights reserved.
+  </footer>
+
+  <script>
+    const cards = document.querySelectorAll('.card');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('visible');
+      });
+    }, { threshold: 0.2 });
+
+    cards.forEach(card => observer.observe(card));
+  </script>
+
+</body>
+</html>
