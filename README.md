@@ -83,7 +83,7 @@ Simply open the `index.html` file in your preferred web browser.
 
 ---
 
-## Project 
+## Screenshots
 <p align="center">
   <b> Images </b><br><br>
   <img src="image1.png" width="300"/>
