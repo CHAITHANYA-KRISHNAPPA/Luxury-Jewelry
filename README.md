@@ -90,7 +90,6 @@ Simply open the `index.html` file in your preferred web browser.
    <img src="image2.png" width="300"/>
    <img src="image3.png" width="300"/>
 </p>
----
 
 ## 🎯 Learning Objectives
 
@@ -133,12 +132,6 @@ Contributions, suggestions, and improvements are welcome.
 
 ---
 
-## 📄 License
-
-This project is intended for educational and learning purposes.
-
----
-
 ## 👨‍💻 Author
 
 **Chaithanya**
@@ -146,8 +139,6 @@ This project is intended for educational and learning purposes.
 Electronics & Communication Engineering Student
 
 Passionate about Web Development, VLSI, Embedded Systems, and Open Source.
-
-GitHub: https://github.com/your-username
 
 ---
 
